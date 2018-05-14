@@ -1,0 +1,16 @@
+{
+    "client_type": "hash",
+    "servers": [
+        {
+            "host": "localhost",
+            "port": 11211
+        }
+    ],
+    "server_type": "standard",
+    "connect_timeout": 10.0,
+    "timeout": 10.0,
+    "no_delay": false,
+    "ignore_exc": false,
+    "default_noreply": true,
+    "allow_unicode_keys": false
+}
