@@ -13,7 +13,6 @@ class CacheMethodNotImplementedError(object):
             )
         )
 
-
 class AbstractCache(object):
     def __init__(self, cache_name):
         raise CacheMethodNotImplementedError(self.__class__, self.__init__)
@@ -50,7 +49,7 @@ class AbstractCache(object):
     def cache_value_serialize(self, cache_value):
         if not (isinstance(cache_value, str) or isinstance(cache_value, dict) or isinstance(cache_value, list)):
             raise ValueError(
-                error_message="Iron CacheClient: Invalid 'cache_value' type: '{}'".format(type(cache_value).__name__)
+                error_message="Serialize: Invalid 'cache_value' type: '{}'".format(type(cache_value).__name__)
             )
 
         try:
@@ -68,11 +67,11 @@ class AbstractCache(object):
         if external_cache_value:
             if not isinstance(external_cache_value, str):
                 raise Exception(
-                    error_message="Serialized cache value is not 'str'"
+                    error_message="Serialize: cache value is not 'str'"
                 )
             if len(external_cache_value) == 0:
                 raise Exception(
-                    error_message="Serialized cache value is empty"
+                    error_message="Serialize: cache value is empty"
                 )
 
         return external_cache_value
