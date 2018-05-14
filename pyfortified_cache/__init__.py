@@ -3,7 +3,7 @@
 
 
 __title__ = 'pyfortified-cache'
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 __version_info__ = tuple(__version__.split('.'))
 
 __author__ = 'jeff00seattle'

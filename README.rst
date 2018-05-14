@@ -3,6 +3,8 @@
 pyfortified-cache
 -----------------
 
+Python caching factory with functionality for creating cache keys and cache value encryption/decryption.
+
 Important Note
 ^^^^^^^^^^^^^^
 
